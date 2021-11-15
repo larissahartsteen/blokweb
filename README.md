@@ -39,11 +39,11 @@ Responsive design
 https://dopper.com/nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Home pagina  
 <img src="images/screenshot_homepagina.jpg" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+Projecten  
 <img src="images/screenshot_projecten.jpg" width="375px" alt="projecten">
  
 </details>
