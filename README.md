@@ -40,7 +40,7 @@ https://abbotkinneys.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home pagina  
-<img src="images/screenshot_home" width="375px" alt="home pagina">
+<img src="images/screenshot_home.jpg" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Product pagina 
