@@ -22,7 +22,7 @@ Larissa Hartsteen
 Blauw
 
 #### Je focus:
-Responsive design
+Surface Plane
  
 </details>
 
@@ -36,15 +36,15 @@ Responsive design
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://dopper.com/nl
+https://abbotkinneys.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home pagina  
-<img src="images/screenshot_homepagina.jpg" width="375px" alt="home pagina">
+<img src="images/screenshot_home" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Projecten  
-<img src="images/screenshot_projecten.jpg" width="375px" alt="projecten">
+Product pagina 
+<img src="images/screenshot_product.jpg" width="375px" alt="product pagina">
  
 </details>
 
