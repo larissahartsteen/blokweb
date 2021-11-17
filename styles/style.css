@@ -18,10 +18,19 @@
   --background-dark: #181F32;
   --background-light:#ffffff;
   --background-geel:#FFDA7B;
+
+  --main-font: 'Greycliff-cf';
+  --second-font: 'Charis-sil';
+}
+
+
+/*********** fonts ***********/
+h3, p, a {
+  font-family: var(--main-font);
 }
 
 h1 {
-  font-family: 'Charis-sil'; /*Helvetica, sans-serif;  springt anders naar helvetica*/
+  font-family: var(--second-font);
 
   font-size: 26px;
   font-weight: 700;
@@ -30,33 +39,43 @@ h1 {
 }
 
 h3 {
-  font-family: 'Greycliff-cf'; /*Helvetica, sans-serif;  springt anders naar helvetica*/
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
 }
 
 p {
-  font-family: 'Greycliff-cf'; /*Helvetica, sans-serif;  springt anders naar helvetica*/
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   text-align: center;
 }
 
+a {
+  color: var(--dark);
+
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 22px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 
 /*********** articles ***********/
-article:first-of-type {
-  /* background-color: red; */
-}
+/* article:first-of-type {
+  background-color: red;
+} */
 
 article:nth-of-type(2) {
   background-color: var(--background-geel);
 
-  padding: 1em;
+  padding: 0.5em;
   width: 90%;
   display: block;
-  margin: 2em auto;
+  margin: 1em;
   text-align: left;
 }
 
@@ -69,27 +88,14 @@ article:nth-of-type(3) {
 
 
 /*********** afbeeldingen ***********/
-img:first-child {
+nav img {
   display: block;
   margin: 1.5em auto 3em 1em;
   width: 55%;
 }
 
-img:nth-child(2) {
+article img {
   display: block;
-  margin: 1.5em auto auto 1em;
-  width: 90%;
-}
-
-
-/*********** links ***********/
-link p{
-  font-family: 'Greycliff-cf'; /*Helvetica, sans-serif;  springt anders naar helvetica*/
-  color: var(--dark);
-
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  text-transform: uppercase;
-  text-align: center;
+  margin: 1em auto;
+  width: 97%;
 }
