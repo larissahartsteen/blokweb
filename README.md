@@ -40,11 +40,11 @@ https://abbotkinneys.com/nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home pagina  
-<img src="images/screenshot_home.jpg" width="375px" alt="home pagina">
+<img src="images/screenshot_homepagina.png" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Product pagina 
-<img src="images/screenshot_product.jpg" width="375px" alt="product pagina">
+Product pagina   
+<img src="images/screenshot_productpagina.png" width="375px" alt="product pagina">
  
 </details>
 
