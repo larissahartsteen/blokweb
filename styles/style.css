@@ -3,11 +3,17 @@
 }
 
 @font-face {
-  font-family: 'Charis-sil';
-  src: url('../fonts/CharisSIL-6.001/CharisSIL-Regular.ttf') format('truetype');
+  /* font-family: 'Charis-sil';
+  src: url('../fonts/CharisSIL-6.001/CharisSIL-Regular.ttf') format('truetype'); */
+
+  font-family: 'Merriweather';
+  src: url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
 
   font-family: 'Greycliff-cf';
   src: url('../fonts/Greycliff_CF/Greycliff\ v1.1w/Webfont/GreycliffCF-Regular.ttf') format('truetype');
+  
+  /* font-family: 'Didact-Gothic';
+  src: url('../fonts/Didact_Gothic/DidactGothic-Regular.ttf') format('truetype'); */
 }
 
 :root {
@@ -22,7 +28,8 @@
   --background-light-blue: #E8EDEF;
 
   --main-font: 'Greycliff-cf';
-  --second-font: 'Charis-sil';
+  --second-font: 'Merriweather'; /* charis-sil */
+  /* --third-font: 'Didact-Gothic'; futura */
 }
 
 
@@ -32,21 +39,35 @@ body {
 }
 
 
+
+
+
+/***************************************************/
+/***************************************************/
 /********************** fonts **********************/
-h3, h4, p, a {
+/***************************************************/
+/***************************************************/
+h3, h4, p, a, figcaption {
   font-family: var(--main-font);
 }
 
 h2 {
   font-family: var(--second-font);
-  font-size: 6.5vw;
+}
+
+.productpagina h2 {
+  font-family: var(--main-font);
+}
+
+h2, .productpagina h2 {
+  font-size: 6vw;
   font-weight: 700;
   letter-spacing: 0.4vw;
   line-height: 30px;
   text-align: center;
 }
 
-h3 {
+.productpagina h3 {
   font-size: 5vw;
   font-weight: 700;
   letter-spacing: 0.4vw;
@@ -61,11 +82,18 @@ h4 {
   text-align: center;
 }
 
-p {
-  font-size: 3.5vw;
+p, .productpagina p {
+  font-size: 4vw;
   font-weight: 400;
   line-height: 22px;
+}
+
+p {
   text-align: center;
+}
+
+.productpagina p {
+  text-align: left;
 }
 
 a {
@@ -77,15 +105,27 @@ a {
   text-decoration: none;
 }
 
+figcaption {
+  color: var(--grey);
+  font-size: 3.3vw;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
 
 
+
+/*******************************************************/
+/*******************************************************/
 /********************** navigatie **********************/
+/*******************************************************/
+/*******************************************************/
 header {
   display: flex;
   flex-wrap: wrap;  
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 
   align-items: center;
   margin: 0;
@@ -107,8 +147,11 @@ header nav ul {
 
 
 
-
+/**********************************************************/
+/**********************************************************/
 /********************** afbeeldingen **********************/
+/**********************************************************/
+/**********************************************************/
 header img {
   /* display: block; */
   margin: 1.5em auto;
@@ -121,9 +164,13 @@ article:first-of-type img {
   width: 97%;
 }
 
+.productpagina article:first-of-type img {
+  margin: 1em auto;
+  width: 90%;
+}
 
-article:nth-of-type(3) img { /*//////////////////////volledige breedte */
-  margin: 0;
+
+article:nth-of-type(3) img {
   width: 100%;
 }
 
@@ -154,14 +201,23 @@ footer img {
 }
 
 
+.productpagina img:first-of-type {
+  display: block;
+  margin: 1em auto;
+  width: 50%;
+}
 
 
-/* ********************* article 1 ********************* */
+/*********************************************************************/
+/*********************************************************************/
+/********************** article 1 - hoofdpagina **********************/
+/*********************************************************************/
+/*********************************************************************/
 article:first-of-type {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  margin-top: 7em;
 }
 
 article:first-of-type ul {
@@ -174,90 +230,106 @@ article:first-of-type ul li {
   display: flex;
 }
 
-article:first-of-type ul li:first-of-type {
+article:first-of-type ul li:first-of-type, article:first-of-type ul li:nth-of-type(2) {
   position: absolute;
   bottom: 0;
+}
+
+article:first-of-type ul li:first-of-type {
   left: 1.5em;
 }
 
 article:first-of-type ul li:nth-of-type(2) {
-  position: absolute;
-  bottom: 0;
   right: 1.5em;
 }
 
 
 
-/* ********************* article 2 ********************* */
+/*********************************************************************/
+/*********************************************************************/
+/********************** article 2 - hoofdpagina **********************/
+/*********************************************************************/
+/*********************************************************************/
  article:nth-of-type(2) {
   background-color: var(--background-geel);
 
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 
   position: relative;
   left: 0;
   right: 0;
-  top: 1em;
+  top: 2em;
+  z-index: 1;
 
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1.5em;
+  padding: 1.5em;
 }
 
 article:nth-of-type(2) p {
   text-align: left;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 
 article:nth-of-type(2) h3 {
-  margin: 1em 0 0 0;
+  margin: 0;
 }
 
 article:nth-of-type(2) a {
   background-color: var(--black);
   color: var(--white);
-  padding: 0.7em;
+  padding: 1em;
 
   position: absolute;
-  bottom: 1.5em;
+  bottom: 2em;
   left: 2em;
 }
 
 
 
-
-/* ******************** article 3 ********************* */
+/*********************************************************************/
+/*********************************************************************/
+/********************** article 3 - hoofdpagina **********************/
+/*********************************************************************/
+/*********************************************************************/
  article:nth-of-type(3) {
   background-color: var(--background-dark-blue);
   color: var(--white);
 
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
+  justify-content: center; */
+  position: relative;
+  
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em 1em 1em 1em;
+  /* padding: 1.5em; */
 
   overflow: hidden;  /* voor javascript */
 }
 
-
-article:nth-of-type(3) h2 {
+article:nth-of-type(3) > h2 {
   border-bottom: 2px solid var(--background-geel);
-  padding-bottom: 0.5em;
+  padding-bottom: 0.7em;
+  margin: 1em 4em 0 4em;
 }
 
+article:nth-of-type(3) > p{
+  margin: 2em;
+}
+
+/********************************************/
 /************ article 3 sections ************/
+/********************************************/
 article:nth-of-type(3) section {
   background-color: var(--background-white);
-  display: flex;
-  flex-wrap: wrap;
+
   position: relative;
-  margin: 1em 0;
+  z-index: 1;
+  margin: 2em;
 
   transition: 2s; /* voor javascript */
 }
@@ -279,14 +351,76 @@ article:nth-of-type(3) section h3 {
 }
 
 
-article:nth-of-type(3) section a {
+article:nth-of-type(3) section a:first-of-type {
   position: absolute;
   left: 1em;
-  top: 20em;
+  top: 18em;
   z-index: 0;
 
   background-color: var(--background-geel);
   padding: 0.7em;
+}
+
+article:nth-of-type(3) section:nth-of-type(3) ~ section h3 {
+  color: var(--white);
+  text-align: center;
+}
+
+article:nth-of-type(3) ul li {
+  color: var(--white);
+  font-family: var(--main-font);
+  line-height: 25px;
+  /* font-size: 4vw; */
+}
+
+article:nth-of-type(3) section:nth-of-type(3) ~ section {
+  background-color: transparent;
+
+  position: absolute;
+  left: 13%;
+  right: 13%;
+  z-index: 0;
+
+  margin: 0 auto;
+  padding: 0 0.5em 0.7em 0;
+}
+
+article:nth-of-type(3) section:nth-of-type(4) {
+  top: 33em;
+}
+
+article:nth-of-type(3) section:nth-of-type(5) {
+  bottom: 32.2em;
+}
+
+article:nth-of-type(3) section:nth-of-type(6) {
+  bottom: 6.5em;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+/* article:nth-of-type(3) section:nth-of-type(3) ~ img {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  border: 1px solid red;
+} */
+/* ///////////////////////////////////////////////////////////////////////// */
+
+
+article:nth-of-type(3) section a:nth-of-type(2) {
+  color: var(--white);
+  border: none;
+  background-color: var(--black);
+
+  position: relative;
+  bottom: 2em;
+  left: 30%;
+  right: 30%;
+
+  /* display: block;  */
+  padding: 1em;
+  /* margin: 0 auto;
+  margin-bottom: 1em; */
 }
 
 article:nth-of-type(3) button {
@@ -294,24 +428,28 @@ article:nth-of-type(3) button {
   border: 1px solid var(--white);
   background-color: transparent;
 
+  display: block; 
   padding: 1em;
-  margin: 1em;
+  margin: 1em auto 2em auto;
 }
 
+/************************************/
 /************ javascript ************/
-article:nth-of-type(3).anders section:nth-of-type(1n) {
+/************************************/
+article:nth-of-type(3).anders section:nth-of-type(1), article:nth-of-type(3).anders section:nth-of-type(3) {
   transform:translateX(100%); /* met transform kun je een element o.a. verplaatsen */
 }
 
-article:nth-of-type(3).anders section:nth-of-type(2n) {
+article:nth-of-type(3).anders section:nth-of-type(2) {
   transform:translateX(-100%);
 }
 
 
-
-
-
-/* ********************* article 4 ********************* */
+/*******************************************************/
+/*******************************************************/
+/********************** article 4 **********************/
+/*******************************************************/
+/*******************************************************/
 article:nth-of-type(4) {
   background-color: var(--background-white);
   color: var(--black);
@@ -322,16 +460,20 @@ article:nth-of-type(4) {
   padding: 1em;  
 }
 
-article:nth-of-type(4) h2 {
+article:nth-of-type(4) > h2 {
   border-bottom: 2px solid var(--background-geel);
-  margin: 0;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.7em;
+  margin: 1em 4em;
 }
 
-article:nth-of-type(4) p {
-  font-size: 4vw;
+article:nth-of-type(4) > p {
+  margin: 0 1.5em;
 }
 
+
+/********************************************/
+/************ article 4 sections ************/
+/********************************************/
 article:nth-of-type(4) section {
   background-color: var(--background-light-blue);
   padding: 3em 0.5em 0.5em 0.5em;
@@ -351,7 +493,11 @@ article:nth-of-type(4) section p {
 
 
 
-/* ********************* footer 4 ********************* */
+/******************************************************/
+/******************************************************/
+/*********************** footer ***********************/
+/******************************************************/
+/******************************************************/
 footer {
   background-color: var(--background-dark-blue);
   padding: 1em 0;
@@ -373,4 +519,26 @@ footer ul li a {
 
 footer ul:nth-of-type(2) li a {
   margin-left: 2em;
+}
+
+
+
+
+
+
+
+/*********************************************************************/
+/*********************************************************************/
+/********************* article 1 - productpagina *********************/
+/*********************************************************************/
+/*********************************************************************/
+.productpagina article:first-of-type {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  margin-top: 7em;
+}
+
+.productpagina article:first-of-type p {
+  padding: 0 1.5em;
 }

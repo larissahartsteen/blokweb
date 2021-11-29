@@ -78,7 +78,12 @@ Product pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+- De 'Bekijk meer' knop krijg ik niet gecentreerd
+- De afbeelding krijg ik niet naar de volledige breedte
+
+<img src="images/screenshot_bekijkmeer_centreren.png" width="375px" alt="bekijk meer knop niet gecentreerd">
+<img src="images/screenshot_afbeelding_breedte.png" width="375px" alt="afbeelding neemt niet de volledige breedte">
+
 
 
 ### Agenda voor meeting
@@ -92,12 +97,8 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het is nu gelukt om de 'Bekijk meer' knop te centreren
+- Als tip gekregen dat je de button tag alleen kan gebruiken voor een actie op de pagina, anders een link.
 
 </details>
 
