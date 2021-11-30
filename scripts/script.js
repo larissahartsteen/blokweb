@@ -1,3 +1,13 @@
+var deButton = document.querySelector("nav button:last-of-type");
+
+deButton.addEventListener("click", toggleMenu);
+
+function toggleMenu(event) {
+  deNav = event.target.parentNode;
+  deNav.classList.toggle("toonMenu");
+}
+
+
 var bekijkMeerButton = document.querySelector("article:nth-of-type(3) button");
 
 function verplaatsDeSections(){

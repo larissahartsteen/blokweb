@@ -21,6 +21,7 @@
   --white: #ffffff;
   --grey: #595959;
   --light-blue: #E8EDEF;
+  --helder-blue: #2B80BA;
 
   --background-dark-blue: #181F32;
   --background-white:#ffffff;
@@ -107,42 +108,13 @@ a {
 
 figcaption {
   color: var(--grey);
-  font-size: 3.3vw;
+  font-size: 2.7vw;
   font-weight: 400;
   line-height: 22px;
   text-align: center;
 }
 
 
-
-/*******************************************************/
-/*******************************************************/
-/********************** navigatie **********************/
-/*******************************************************/
-/*******************************************************/
-header {
-  display: flex;
-  flex-wrap: wrap;  
-  position: fixed;
-  top: 0;
-  z-index: 2;
-
-  align-items: center;
-  margin: 0;
-  padding: 0 1em;
-  background-color: var(--background-white);
-}
-
-header nav {
-  flex-grow: 1;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
-  list-style: none;
-}
 
 
 
@@ -152,23 +124,34 @@ header nav ul {
 /********************** afbeeldingen **********************/
 /**********************************************************/
 /**********************************************************/
-header img {
-  /* display: block; */
-  margin: 1.5em auto;
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+header nav img {
+  margin: 1.5em auto 1.5em 0;
   width: 50%;
 }
+
+.productpagina header nav img {
+  background-color: red;
+  margin: 1.5em auto 1.5em 0;
+  width: 50%;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
 
 article:first-of-type img {
   display: block;
   margin: 1em auto;
   width: 97%;
 }
-
-.productpagina article:first-of-type img {
-  margin: 1em auto;
-  width: 90%;
-}
-
 
 article:nth-of-type(3) img {
   width: 100%;
@@ -178,34 +161,114 @@ article:nth-of-type(3) section img {
   width: 100%;
 }
 
-
 article:nth-of-type(4) img {
   position: relative;
   top: 3em;
 }
-
-article:nth-of-type(4) img:first-of-type {
-  width: 30%;
-  right: 2em;
-}
-
-article:nth-of-type(4) img:nth-of-type(2) {
-  width: 30%;
-  left: 2em;
-}
-
 
 footer img {
   width: 12px;
   height: 12px;
 }
 
-
 .productpagina img:first-of-type {
   display: block;
   margin: 1em auto;
-  width: 50%;
+  width: 65%;
 }
+
+.productpagina article:first-of-type img {
+  margin: 2em auto 0 auto;
+}
+
+.productpagina article:nth-of-type(2) section img {
+  width: 100%;
+}
+
+
+
+
+
+
+/********************************************************/
+/********************************************************/
+/************************ header ************************/
+/********************************************************/
+/********************************************************/
+header {
+  display: flex;
+  flex-wrap: wrap;  
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  /* align-items: center; */
+  margin: 0;
+  padding: 0 1em;
+  background-color: var(--background-white);
+}
+
+nav {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-between;
+}
+
+nav button {
+  width: 15%;
+  margin: auto 0 auto auto;
+  padding: 0.5em;
+
+  appearance: none;
+  border: none;
+
+  background-color: transparent;
+  color: var(--grey);
+  font-family: var(--main-font);
+  font-size: 4vw;
+}
+
+nav button:last-of-type {
+  z-index: 4;
+}
+
+nav ul {
+  background-color: var(--background-light-blue);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: 0;
+  padding: 4em 2em 0 2em;
+
+  z-index: 1; 
+  transform: translateX(100%);
+}
+
+nav.toonMenu ul {
+  transform: translateX(0%);
+  transition:0.5s;
+}
+
+nav ul li {
+  list-style:none;
+  margin: 2em 0;
+  border-bottom: 1px solid var(--grey);
+}
+
+nav ul li a {
+  font-size: 2.5vw;
+}
+
+
+
+
+
+
+
 
 
 /*********************************************************************/
@@ -214,9 +277,6 @@ footer img {
 /*********************************************************************/
 /*********************************************************************/
 article:first-of-type {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
   margin-top: 7em;
 }
 
@@ -242,6 +302,8 @@ article:first-of-type ul li:first-of-type {
 article:first-of-type ul li:nth-of-type(2) {
   right: 1.5em;
 }
+
+
 
 
 
@@ -477,8 +539,9 @@ article:nth-of-type(4) > p {
 article:nth-of-type(4) section {
   background-color: var(--background-light-blue);
   padding: 3em 0.5em 0.5em 0.5em;
-  margin: 0.5em;
+  margin: 6em 0.25em 1em 0.25em;
   width: 45%;
+  position: relative;
 }
 
 article:nth-of-type(4) section h4 {
@@ -490,6 +553,120 @@ article:nth-of-type(4) section p {
   padding: 0 0.5em;
   font-size: 3.5vw;
 }
+
+article:nth-of-type(4) section img {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+article:nth-of-type(4) section:first-of-type img {
+  width: 85%;
+  top: -2em;
+}
+
+article:nth-of-type(4) section:nth-of-type(2) img {
+  width: 60%;
+  top: -3.5em;
+}
+
+
+
+
+
+/*********************************************************************/
+/*********************************************************************/
+/********************* article 1 - productpagina *********************/
+/*********************************************************************/
+/*********************************************************************/
+.productpagina article:first-of-type {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  margin-top: 7em;
+  margin: 1.5em;
+
+  background-color: red;
+}
+
+.productpagina article:first-of-type section {
+  margin: 1.5em 0;
+}
+
+.productpagina article:first-of-type h3 {
+  margin: 0;
+}
+
+.productpagina article:first-of-type section p {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.productpagina article:first-of-type a {
+  color: var(--helder-blue);
+  font-size: 3vw;
+}
+
+
+
+
+/*********************************************************************/
+/*********************************************************************/
+/********************* article 2 - productpagina *********************/
+/*********************************************************************/
+/*********************************************************************/
+.productpagina article:nth-of-type(2) {
+  background-color: var(--background-dark-blue);
+  color: var(--white);
+  
+  position: relative;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/********************************************/
+/************ article 2 sections ************/
+/********************************************/
+.productpagina article:nth-of-type(2) section {
+  background-color: var(--background-white);
+  position: relative;
+  z-index: 1;
+}
+
+.productpagina article:nth-of-type(2) section h3, article:nth-of-type(2) section a, article:nth-of-type(2) section p{
+  color: var(--black);
+}
+
+.productpagina article:nth-of-type(2) section p {
+  text-align: left;
+  color: var(--grey);
+  padding: 0 1em 1.5em 1.5em;
+}
+
+.productpagina article:nth-of-type(2) section h3 {
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0 1em;
+}
+
+.productpagina article:nth-of-type(2) section a:first-of-type {
+  position: absolute;
+  left: 1em;
+  top: 19em;
+  height: fit-content;
+
+  z-index: 0;
+
+  background-color: var(--background-geel);
+  padding: 0.7em;
+}
+
+
 
 
 
@@ -519,26 +696,4 @@ footer ul li a {
 
 footer ul:nth-of-type(2) li a {
   margin-left: 2em;
-}
-
-
-
-
-
-
-
-/*********************************************************************/
-/*********************************************************************/
-/********************* article 1 - productpagina *********************/
-/*********************************************************************/
-/*********************************************************************/
-.productpagina article:first-of-type {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  margin-top: 7em;
-}
-
-.productpagina article:first-of-type p {
-  padding: 0 1.5em;
 }
