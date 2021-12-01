@@ -130,13 +130,11 @@ Dit was lastig:
 
 ### Agenda voor meeting
 samen met je groepje opstellen
-
 | Anneke            |Yeliz              | Larissa           | Linsey            |
 | ---               | ---               | ---               | ---               |
 | Niets vragen maar | Vragen welke 2e   | Hoe verander je   |                   |
 | misschien tijdens | pagina beter is   | het logo voor de  |                   |
 | call wel          | om te maken       | dark-mode?        |                   |
-|                   |                   |                   |                   |
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
