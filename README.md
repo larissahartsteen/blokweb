@@ -112,18 +112,31 @@ samen met je groepje opstellen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Dit ging goed:
+- 2e pagina bijna klaar
+- Animatie's toegevoegd aan website
+- Begin gemaakt aan de dark-mode
+<img src="images/Schermafbeelding_animaties.png" width="375px" alt="Animatie's toegevoegd aan website">
+
+Dit was lastig:
+- Het lukt niet om het logo op de 2e pagina kleiner te maken
+- Ik wil een ander logo voor de dark-mode, dit is nog niet gelukt
+- De footer is versprongen op de 2e pagina
+<img src="images/Schermafbeelding_logo_groot.png" width="375px" alt="Logo op de 2e pagina te groot">
+<img src="images/Schermafbeelding_logo_wit.png" width="375px" alt="Ander logo voor de dark-mode">
+<img src="images/Schermafbeelding_footer.png" width="375px" alt="De footer is versprongen op de 2e pagina">
+
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+| Anneke            |Yeliz              | Larissa           | Linsey            |
+| ---               | ---               | ---               | ---               |
+| Niets vragen maar | Vragen welke 2e   | Hoe verander je   |                   |
+| misschien tijdens | pagina beter is   | het logo voor de  |                   |
+| call wel          | om te maken       | dark-mode?        |                   |
+|                   |                   |                   |                   |
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
