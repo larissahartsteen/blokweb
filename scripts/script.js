@@ -15,3 +15,4 @@ function verplaatsDeSections(){
     hetDerdeArticle.classList.toggle("anders");
 }
 bekijkMeerButton.addEventListener("click", verplaatsDeSections);
+

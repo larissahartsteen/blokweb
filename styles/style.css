@@ -28,6 +28,12 @@
   --background-geel:#FFDA7B;
   --background-light-blue: #E8EDEF;
 
+  --dark-mode-background: #212121;
+  --dark-mode-nav: #121212;
+  --dark-mode-grey1: #272727;
+  --dark-mode-grey2: #2E2E2E;
+  --dark-mode-grey3: #474747;
+
   --main-font: 'Greycliff-cf';
   --second-font: 'Merriweather'; /* charis-sil */
   /* --third-font: 'Didact-Gothic'; futura */
@@ -38,7 +44,6 @@ body {
   margin: 5em 0 0 0;
   background-color: var(--background-light-blue);
 }
-
 
 
 
@@ -116,6 +121,68 @@ figcaption {
 
 
 
+
+
+/**********************************************************/
+/**********************************************************/
+/*********************** dark mode ***********************/
+/**********************************************************/
+/**********************************************************/
+@media (prefers-color-scheme : dark) {
+  body {
+    background-color: var(--dark-mode-background);
+  }
+  body header {
+    background-color: var(--dark-mode-nav);
+  }
+  body header nav button {
+    color: var(--white);
+  }
+  body header nav ul {
+    background-color: var(--dark-mode-nav);
+  }
+  body header nav ul li a {
+    color: var(--white);
+  }
+
+  body header nav img {
+  }
+
+  main article:first-of-type h2, main article:first-of-type ul li a{
+    color: var(--white);
+  }
+  main article:nth-of-type(3) {
+    background-color: var(--dark-mode-grey1);
+  }
+  main article:nth-of-type(3) section, main article:nth-of-type(3) section h3, main article:nth-of-type(3) section p {
+    background-color: var(--dark-mode-grey3);
+    color: var(--white);
+  }
+  main article:nth-of-type(3) section a:nth-of-type(2) {
+    background-color: var(--helder-blue);
+  }
+  main article:nth-of-type(3) button {
+    /* border-color: var(--helder-blue); */
+  }
+  main article:nth-of-type(3) section:nth-of-type(4) h3, main article:nth-of-type(3) section:nth-of-type(5) h3, main article:nth-of-type(3) section:nth-of-type(6) h3 {
+    background-color: transparent;
+  }
+  main article:nth-of-type(4) {
+    background-color: var(--dark-mode-background);
+  }
+  main article:nth-of-type(4) h2, main article:nth-of-type(4) p {
+    color: var(--white);
+  }
+  main article:nth-of-type(4) section {
+    background-color: var(--dark-mode-grey3);
+  }
+  main article:nth-of-type(4) section h4 {
+    color: var(--white);
+  }
+  body footer {
+    background-color: var(--dark-mode-nav);
+  }
+}
 
 
 
@@ -200,7 +267,7 @@ header {
   flex-wrap: wrap;  
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
 
   /* align-items: center; */
   margin: 0;
@@ -262,7 +329,6 @@ nav ul li {
 nav ul li a {
   font-size: 2.5vw;
 }
-
 
 
 
@@ -495,15 +561,40 @@ article:nth-of-type(3) button {
   margin: 1em auto 2em auto;
 }
 
-/************************************/
-/************ javascript ************/
-/************************************/
+/**********************************************/
+/************ article 3 javascript ************/
+/**********************************************/
 article:nth-of-type(3).anders section:nth-of-type(1), article:nth-of-type(3).anders section:nth-of-type(3) {
   transform:translateX(100%); /* met transform kun je een element o.a. verplaatsen */
 }
 
 article:nth-of-type(3).anders section:nth-of-type(2) {
   transform:translateX(-100%);
+}
+
+/**********************************************/
+/************ article 3 animations ************/
+/**********************************************/
+@keyframes button-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+article:nth-of-type(3) button {
+  animation-name: button-animation;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: inherit; */
+  /* animation-direction: alternate; */
 }
 
 
@@ -573,6 +664,31 @@ article:nth-of-type(4) section:nth-of-type(2) img {
   top: -3.5em;
 }
 
+/**********************************************/
+/************ article 4 animations ************/
+/**********************************************/
+@keyframes vegan-yoghurt-animation {
+  0% {
+    transform:translateY(0.25rem);
+    }
+  /* 50% {
+    transform:translateY(-0.5rem);
+  } */
+  100% {
+    transform:translateY(-1rem);
+  }
+}
+
+article:nth-of-type(4) section:first-of-type img {
+  animation-name: vegan-yoghurt-animation;
+  animation-duration: 1s;
+  /* animation-delay: 3s; */
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: inherit; */
+  animation-direction: alternate;
+}
+
 
 
 
@@ -589,7 +705,7 @@ article:nth-of-type(4) section:nth-of-type(2) img {
   margin-top: 7em;
   margin: 1.5em;
 
-  background-color: red;
+  /* background-color: red; */
 }
 
 .productpagina article:first-of-type section {
@@ -610,6 +726,22 @@ article:nth-of-type(4) section:nth-of-type(2) img {
   font-size: 3vw;
 }
 
+/**********************************************/
+/************ article 1 animations ************/
+/**********************************************/
+@keyframes coco-start-animation {
+  0% {
+    transform:scale(0);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+.productpagina article:first-of-type img:first-of-type {
+  animation-name: coco-start-animation;
+  animation-duration: 3s;
+}
 
 
 
@@ -620,13 +752,16 @@ article:nth-of-type(4) section:nth-of-type(2) img {
 /*********************************************************************/
 .productpagina article:nth-of-type(2) {
   background-color: var(--background-dark-blue);
-  color: var(--white);
-  
   position: relative;
-
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.productpagina article:nth-of-type(2) h3 {
+  color: var(--white);
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 /********************************************/
@@ -669,6 +804,109 @@ article:nth-of-type(4) section:nth-of-type(2) img {
 
 
 
+/*********************************************************************/
+/*********************************************************************/
+/********************* article 3 - productpagina *********************/
+/*********************************************************************/
+/*********************************************************************/
+.productpagina article:nth-of-type(3) {
+  background-color: var(--background-white);
+  padding-top: 3em;
+}
+
+.productpagina h3 {
+  text-align: center;
+  color: var(--black);
+}
+
+.productpagina article:nth-of-type(3) section {
+  background-color: var(--background-light-blue);
+  padding: 3em 0.5em 0.5em 0.5em;
+  margin: 6em auto 0 auto;
+  width: 45%;
+  position: relative;
+}
+
+.productpagina article:nth-of-type(3) section h4 {
+  margin: 0;
+  color: var(--black);
+}
+
+.productpagina article:nth-of-type(3) section p {
+  margin: 0;
+  padding: 0 0.5em;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+.productpagina article:nth-of-type(3) img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* width: 85%;
+  top: -2em; */
+} 
+
+
+
+
+
+/*********************************************************************/
+/*********************************************************************/
+/********************* article 4 - productpagina *********************/
+/*********************************************************************/
+/*********************************************************************/
+.productpagina article:nth-of-type(4) section{
+  background-color: var(--helder-blue);
+
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 2em;
+  z-index: 1;
+
+  width: 95%;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.productpagina article:nth-of-type(4) section h3 {
+  color: var(--white);
+  text-align: left;
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+.productpagina article:nth-of-type(4) section p {
+  color: var(--white);
+  text-align: left;
+  margin-bottom: 3em;
+}
+
+.productpagina article:nth-of-type(4) section a {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1em;
+
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+}
+
+.productpagina article:nth-of-type(4) img {
+  width: 90%;
+  margin: 0;
+  padding-bottom: 3em;
+}
+
+
+
 
 /******************************************************/
 /******************************************************/
@@ -696,4 +934,8 @@ footer ul li a {
 
 footer ul:nth-of-type(2) li a {
   margin-left: 2em;
+  /* text-align: left; */
 }
+
+/* footer ul:nth-of-type(2) li img {
+} */
