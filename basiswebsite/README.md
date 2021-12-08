@@ -61,10 +61,10 @@ Product pagina
 <img src="images/screenshot_productpagina_verdeeld.png" width="375px" alt="breakdown van een product pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<!-- <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel"> -->
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<!-- <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
 
@@ -78,7 +78,12 @@ Product pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+- De 'Bekijk meer' knop krijg ik niet gecentreerd
+- De afbeelding krijg ik niet naar de volledige breedte
+
+<img src="images/screenshot_bekijkmeer_centreren.png" width="375px" alt="bekijk meer knop niet gecentreerd">
+<img src="images/screenshot_afbeelding_breedte.png" width="375px" alt="afbeelding neemt niet de volledige breedte">
+
 
 
 ### Agenda voor meeting
@@ -92,12 +97,8 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het is nu gelukt om de 'Bekijk meer' knop te centreren
+- Als tip gekregen dat je de button tag alleen kan gebruiken voor een actie op de pagina, anders een link.
 
 </details>
 
@@ -111,26 +112,33 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Dit ging goed:
+- 2e pagina bijna klaar
+- Animatie's toegevoegd aan website
+- Begin gemaakt aan de dark-mode
+<img src="images/Schermafbeelding_animaties.png" width="375px" alt="Animatie's toegevoegd aan website">
+
+Dit was lastig:
+- Het lukt niet om het logo op de 2e pagina kleiner te maken
+- Ik wil een ander logo voor de dark-mode, dit is nog niet gelukt
+<img src="images/Schermafbeelding_logo_groot.png" width="375px" alt="Logo op de 2e pagina te groot">
+<img src="images/Schermafbeelding_logo_wit.png" width="375px" alt="Ander logo voor de dark-mode">
+
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+| Anneke            |Yeliz              | Larissa           | Linsey            |
+| ---               | ---               | ---               | ---               |
+| Niets vragen maar | Vragen welke 2e   | Hoe verander je   | ?                 |
+| misschien tijdens | pagina beter is   | het logo voor de  |                   |
+| call wel          | om te maken       | dark-mode?        |                   |
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het is is nu gelukt om het logo wit te krijgen in plaats van de afbeelding de hoeven veranderen
+- In de les kijken hoe deze kleiner gemaakt kan worden
 
 </details>
 
@@ -144,9 +152,43 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+<!-- Lijst met je bevindingen die in de test naar voren kwamen:
+- Kleine knopjes zijn niet toegankelijk
+- Hoge contrasten zijn nodig voor mensen met kleurenblindheid
+- Als iets met een touchpad werkt hoeft het niet te betekenen dat het ook met een muis werkt
+- De icoontjes onder aan de ingrediënten lijst zijn moeilijk te zien in light-mode vanwege het contrast
 
-#### Titel eerste bevinding
+
+
+
+- spasme/parkinson
+    moelijk touchpad nog moeilijker met muis
+    eerste stand prima te doen
+    hoogste stand niet te doen
+    de linkjes misschien iets te klein maar was nog makkelijk klikbaar in eerste stand
+
+- color #0779P (geel)
+    alles goed te zien, kleuren contast prima 
+
+- peripheral field loss #0775p stipje doorheenkijken
+    zelf met en zonder bril niets goed te zien
+    testpersonen konden het prima zien, niets te klagen
+
+- central field loss AMD #200774 stipje in het midden
+    wat moeilijker kan er nu natuurlijk doorheen kijken
+
+- combined loss diabetic eye disease #200773 vlekjes
+    lastig maar goed te zien
+
+- low contrast 
+    icoontjes moeilijk te zien
+    zwart op geel wat lastig
+
+- voice over??? -->
+
+
+
+#### Kleine knopjes zijn niet toegankelijk
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
@@ -181,17 +223,24 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Dit ging goed:
+- Dark-mode is af en is nu efficienter aangesproken in de @media
+- Het is gelukt om het logo op de 2e pagina kleiner te maken en veranderd nu mee in kleur met de dark-mode
 
+Dit was lastig:
+- De footer is versprongen op de 2e pagina
+- Ik moet de surface plane nog wat verder uitwerken
+<img src="images/Schermafbeelding_footer.png" width="375px" alt="De footer is versprongen op de 2e pagina">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Anneke            |Yeliz              | Larissa           | Linsey            |
+| ---               | ---               | ---               | ---               |
+| Wil vragen of er  | Vragen of het     | Heeft probleem    | Wil ook tips      |
+| handige tips zijn | hamburgermenu     | dat de footer is  | krijgen over hoe  |
+| om je css netter  | onder de DOM      | versprongen op de | je je css netter  |
+| te maken          | manipulatie valt  | tweede pagina     | kan maken         |
 
 
 ### Verslag van meeting
