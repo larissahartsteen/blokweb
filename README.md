@@ -132,17 +132,15 @@ Dit was lastig:
 samen met je groepje opstellen
 | Anneke            |Yeliz              | Larissa           | Linsey            |
 | ---               | ---               | ---               | ---               |
-| Niets vragen maar | Vragen welke 2e   | Hoe verander je   |                   |
+| Niets vragen maar | Vragen welke 2e   | Hoe verander je   | ?                 |
 | misschien tijdens | pagina beter is   | het logo voor de  |                   |
 | call wel          | om te maken       | dark-mode?        |                   |
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het is is nu gelukt om het logo wit te krijgen in plaats van de afbeelding de hoeven veranderen
+- In de les kijken hoe deze kleiner gemaakt kan worden
 
 </details>
 
@@ -157,6 +155,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
+- spasme/parkinson
+    moulijk touchpad
+    eerste stand prima te doen
+
+- color #0779P (geel)
+    alles goed te zien, kleuren contast prima 
 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)

@@ -2,6 +2,13 @@
   box-sizing:border-box;  
 }
 
+body {
+  margin: 5em 0 0 0;
+  background-color: var(--background-light-blue);
+}
+
+
+
 @font-face {
   /* font-family: 'Charis-sil';
   src: url('../fonts/CharisSIL-6.001/CharisSIL-Regular.ttf') format('truetype'); */
@@ -21,28 +28,30 @@
   --white: #ffffff;
   --grey: #595959;
   --light-blue: #E8EDEF;
-  --helder-blue: #2B80BA;
+  --accent: #2B80BA;
 
+  --background-light-blue: #E8EDEF;
   --background-dark-blue: #181F32;
   --background-white:#ffffff;
   --background-geel:#FFDA7B;
-  --background-light-blue: #E8EDEF;
-
-  --dark-mode-background: #212121;
-  --dark-mode-nav: #121212;
-  --dark-mode-grey1: #272727;
-  --dark-mode-grey2: #2E2E2E;
-  --dark-mode-grey3: #474747;
 
   --main-font: 'Greycliff-cf';
   --second-font: 'Merriweather'; /* charis-sil */
-  /* --third-font: 'Didact-Gothic'; futura */
 }
 
-
-body {
-  margin: 5em 0 0 0;
-  background-color: var(--background-light-blue);
+@media (prefers-color-scheme : dark) {
+  :root {
+    --black: #ffffff;
+    --white: #000000;
+    --grey: #E8EDEF;
+    --accent: #FFDA7B;
+  
+    --background-light-blue: #212121;
+    /* --background-white: #121212; */
+    --background-dark-blue: #272727;
+    /* --dark-mode-grey2: #2E2E2E; */
+    --background-white: #474747;
+  }
 }
 
 
@@ -123,96 +132,21 @@ figcaption {
 
 
 
-/**********************************************************/
-/**********************************************************/
-/*********************** dark mode ***********************/
-/**********************************************************/
-/**********************************************************/
-@media (prefers-color-scheme : dark) {
-  body {
-    background-color: var(--dark-mode-background);
-  }
-  body header {
-    background-color: var(--dark-mode-nav);
-  }
-  body header nav button {
-    color: var(--white);
-  }
-  body header nav ul {
-    background-color: var(--dark-mode-nav);
-  }
-  body header nav ul li a {
-    color: var(--white);
-  }
-
-  /* body header nav img {
-  } */
-
-  main article:first-of-type h2, main article:first-of-type ul li a{
-    color: var(--white);
-  }
-  main article:nth-of-type(3) {
-    background-color: var(--dark-mode-grey1);
-  }
-  main article:nth-of-type(3) section, main article:nth-of-type(3) section h3, main article:nth-of-type(3) section p {
-    background-color: var(--dark-mode-grey3);
-    color: var(--white);
-  }
-  main article:nth-of-type(3) section a:nth-of-type(2) {
-    background-color: var(--helder-blue);
-  }
-  /* main article:nth-of-type(3) button {
-    /* border-color: var(--helder-blue); */
-  } 
-  main article:nth-of-type(3) section:nth-of-type(4) h3, main article:nth-of-type(3) section:nth-of-type(5) h3, main article:nth-of-type(3) section:nth-of-type(6) h3 {
-    background-color: transparent;
-  }
-  main article:nth-of-type(4) {
-    background-color: var(--dark-mode-background);
-  }
-  main article:nth-of-type(4) h2, main article:nth-of-type(4) p {
-    color: var(--white);
-  }
-  main article:nth-of-type(4) section {
-    background-color: var(--dark-mode-grey3);
-  }
-  main article:nth-of-type(4) section h4 {
-    color: var(--white);
-  }
-  body footer {
-    background-color: var(--dark-mode-nav);
-  }
-
-
-
 
 /**********************************************************/
 /**********************************************************/
 /********************** afbeeldingen **********************/
 /**********************************************************/
 /**********************************************************/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-header nav img {
+header nav svg {
   margin: 1.5em auto 1.5em 0;
   width: 50%;
+  /* height: 1em; */
 }
 
-.productpagina header nav img {
-  background-color: red;
-  margin: 1.5em auto 1.5em 0;
-  width: 50%;
+header path {
+  fill: var(--black);
 }
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
 
 article:first-of-type img {
   display: block;
@@ -251,6 +185,195 @@ footer img {
 .productpagina article:nth-of-type(2) section img {
   width: 100%;
 }
+
+
+
+
+
+/*************************************************************/
+/*************************************************************/
+/************************* animaties *************************/
+/*************************************************************/
+/*************************************************************/
+@keyframes logo-animation {
+  0% { transform: scale(1); }
+  5% { transform: scale(.5); }
+  10% { transform: scale(1); }
+  15% { transform: scale(.5); }
+  20% { transform: scale(1); }
+  25% { transform: scale(.5); }
+  30% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+nav:hover svg {
+  animation-name: logo-animation;
+  animation-duration: 2s;
+}
+
+
+@keyframes button-animation {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+article:nth-of-type(3) button {
+  animation-name: button-animation;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes vegan-yoghurt-animation {
+  0% { transform:translateY(0.25rem); }
+  100% { transform:translateY(-1rem); }
+}
+
+article:nth-of-type(4) section:first-of-type img {
+  animation-name: vegan-yoghurt-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes coco-start-animation {
+  0% { transform:scale(0); }
+  100% { transform:scale(1); }
+}
+
+.productpagina article:first-of-type img:first-of-type {
+  animation-name: coco-start-animation;
+  animation-duration: 3s;
+}
+
+
+
+
+
+/**********************************************************/
+/**********************************************************/
+/************************* states *************************/
+/**********************************************************/
+/**********************************************************/
+/*********************************************/
+/******************* links *******************/
+/*********************************************/
+header nav button:hover, article:first-of-type ul li a:hover, footer ul li a:hover, .productpagina article:first-of-type a:hover {
+  text-decoration: underline;
+}
+
+
+article:first-of-type ul li a:focus, header nav button:focus {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+footer ul li a:focus {
+  background-color: #2B80BA;
+}
+
+.productpagina article:first-of-type a:focus, header nav button:active {
+  background-color: #000000;
+  color: #2B80BA;
+}
+
+
+article:first-of-type ul li a:active {
+  color: var(--white);
+  background-color: var(--accent);
+}
+
+footer ul li a:active {
+  color: var(--accent);
+}
+
+.productpagina article:first-of-type a:active {
+  color: var(--white);
+}
+
+
+/*********************************************/
+/**************** zwarte knop ****************/
+/*********************************************/
+article:nth-of-type(2) a:hover, article:nth-of-type(3) section a:nth-of-type(2):hover, .productpagina article:nth-of-type(4) section a:hover {
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+article:nth-of-type(3) section a:nth-of-type(2):hover {
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+
+
+article:nth-of-type(2) a:focus, article:nth-of-type(3) section a:nth-of-type(2):focus, .productpagina article:nth-of-type(4) section a:focus {
+  color: #ffffff;
+  background-color: #000000;
+  border: 3px solid #2B80BA;
+}
+
+article:nth-of-type(3) section a:nth-of-type(2):focus {
+  color: var(--white); 
+  background-color: var(--black);
+}
+
+
+article:nth-of-type(2) a:active, article:nth-of-type(3) section a:nth-of-type(2):active, .productpagina article:nth-of-type(4) section a:active { 
+  background-color: #000000;
+  color: #FFDA7B; /*kleur blijf altijd hetzelfde*/
+  text-decoration: underline;
+} 
+
+article:nth-of-type(3) section a:nth-of-type(2):active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.productpagina article:nth-of-type(4) section a:active {
+  background-color: #000000; /*kleur blijf altijd hetzelfde*/
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
+}
+
+/*********************************************/
+/***************** gele knop *****************/
+/*********************************************/
+article:nth-of-type(3) section a:first-of-type:hover, .productpagina article:nth-of-type(2) section a:first-of-type:hover {
+  text-decoration: underline;
+}
+
+article:nth-of-type(3) button:hover {  /*kleur blijf altijd hetzelfde*/
+  color: #FFDA7B;
+  background-color: transparent;
+  border: 2px solid #FFDA7B;
+}
+
+
+article:nth-of-type(3) section a:first-of-type:focus, .productpagina article:nth-of-type(2) section a:first-of-type:focus { /*kleur blijf altijd hetzelfde*/
+  text-decoration: underline;
+  border: 1px solid #000000;
+}
+
+article:nth-of-type(3) button:focus { /*kleur blijf altijd hetzelfde*/
+  color: #000000;
+  background-color: #FFDA7B;
+  border: 3px solid #2B80BA; 
+}
+
+
+article:nth-of-type(3) section a:first-of-type:active, article:nth-of-type(3) button:active, .productpagina article:nth-of-type(2) section a:first-of-type:active { /*kleur blijf altijd hetzelfde*/
+  color: #FFDA7B;
+  background-color: #000000;
+} 
+
+article:nth-of-type(3) button:active {
+  background-color: var(--black);
+  text-decoration: underline;
+}
+
 
 
 
@@ -346,10 +469,15 @@ article:first-of-type {
   margin-top: 7em;
 }
 
+article:first-of-type h2 {
+  color: var(--black);
+}
+
 article:first-of-type ul {
   display: flex;
   flex-grow: 1;
   position: relative;
+  margin-top: 2em;
 }
 
 article:first-of-type ul li {
@@ -368,6 +496,11 @@ article:first-of-type ul li:first-of-type {
 article:first-of-type ul li:nth-of-type(2) {
   right: 1.5em;
 }
+
+article:first-of-type ul li a {
+  padding: 0.5em;
+}
+
 
 
 
@@ -406,14 +539,16 @@ article:nth-of-type(2) h3 {
 }
 
 article:nth-of-type(2) a {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #000000; /*kleur blijf altijd hetzelfde*/
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
   padding: 1em;
 
   position: absolute;
   bottom: 2em;
   left: 2em;
 }
+
+
 
 
 
@@ -424,7 +559,7 @@ article:nth-of-type(2) a {
 /*********************************************************************/
  article:nth-of-type(3) {
   background-color: var(--background-dark-blue);
-  color: var(--white);
+  color: var(--black);
 
   /* display: flex;
   flex-wrap: wrap;
@@ -440,12 +575,14 @@ article:nth-of-type(2) a {
 }
 
 article:nth-of-type(3) > h2 {
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
   border-bottom: 2px solid var(--background-geel);
   padding-bottom: 0.7em;
   margin: 1em 4em 0 4em;
 }
 
 article:nth-of-type(3) > p{
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
   margin: 2em;
 }
 
@@ -485,17 +622,18 @@ article:nth-of-type(3) section a:first-of-type {
   top: 18em;
   z-index: 0;
 
+  color: #000000; /*kleur blijf altijd hetzelfde*/
   background-color: var(--background-geel);
   padding: 0.7em;
 }
 
 article:nth-of-type(3) section:nth-of-type(3) ~ section h3 {
-  color: var(--white);
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
   text-align: center;
 }
 
 article:nth-of-type(3) ul li {
-  color: var(--white);
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
   font-family: var(--main-font);
   line-height: 25px;
   /* font-size: 4vw; */
@@ -525,16 +663,6 @@ article:nth-of-type(3) section:nth-of-type(6) {
   bottom: 6.5em;
 }
 
-/* ///////////////////////////////////////////////////////////////////////// */
-/* article:nth-of-type(3) section:nth-of-type(3) ~ img {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  border: 1px solid red;
-} */
-/* ///////////////////////////////////////////////////////////////////////// */
-
-
 article:nth-of-type(3) section a:nth-of-type(2) {
   color: var(--white);
   border: none;
@@ -544,17 +672,13 @@ article:nth-of-type(3) section a:nth-of-type(2) {
   bottom: 2em;
   left: 30%;
   right: 30%;
-
-  /* display: block;  */
   padding: 1em;
-  /* margin: 0 auto;
-  margin-bottom: 1em; */
 }
 
 article:nth-of-type(3) button {
-  color: var(--white);
-  border: 1px solid var(--white);
-  background-color: transparent;
+  color: #000000; /*kleur blijf altijd hetzelfde*/
+  background-color: #FFDA7B; /*kleur blijf altijd hetzelfde*/
+  border-style: none;
 
   display: block; 
   padding: 1em;
@@ -572,30 +696,8 @@ article:nth-of-type(3).anders section:nth-of-type(2) {
   transform:translateX(-100%);
 }
 
-/**********************************************/
-/************ article 3 animations ************/
-/**********************************************/
-@keyframes button-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(-2deg);
-  }
-}
 
-article:nth-of-type(3) button {
-  animation-name: button-animation;
-  animation-duration: 1s;
-  animation-delay: 3s;
-  /* animation-iteration-count: 3; */
-  animation-iteration-count: infinite;
-  /* animation-fill-mode: inherit; */
-  /* animation-direction: alternate; */
-}
+
 
 
 /*******************************************************/
@@ -664,30 +766,6 @@ article:nth-of-type(4) section:nth-of-type(2) img {
   top: -3.5em;
 }
 
-/**********************************************/
-/************ article 4 animations ************/
-/**********************************************/
-@keyframes vegan-yoghurt-animation {
-  0% {
-    transform:translateY(0.25rem);
-    }
-  /* 50% {
-    transform:translateY(-0.5rem);
-  } */
-  100% {
-    transform:translateY(-1rem);
-  }
-}
-
-article:nth-of-type(4) section:first-of-type img {
-  animation-name: vegan-yoghurt-animation;
-  animation-duration: 1s;
-  /* animation-delay: 3s; */
-  /* animation-iteration-count: 3; */
-  animation-iteration-count: infinite;
-  /* animation-fill-mode: inherit; */
-  animation-direction: alternate;
-}
 
 
 
@@ -699,13 +777,12 @@ article:nth-of-type(4) section:first-of-type img {
 /*********************************************************************/
 /*********************************************************************/
 .productpagina article:first-of-type {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  margin-top: 7em;
   margin: 1.5em;
+  margin-top: 7em;
+}
 
-  /* background-color: red; */
+.productpagina article:first-of-type p {
+  color: var(--black);
 }
 
 .productpagina article:first-of-type section {
@@ -717,31 +794,18 @@ article:nth-of-type(4) section:first-of-type img {
 }
 
 .productpagina article:first-of-type section p {
+  color: var(--black);
   padding: 0 0 0.5em 0;
   margin: 0;
 }
 
 .productpagina article:first-of-type a {
-  color: var(--helder-blue);
+  color: var(--accent);
   font-size: 3vw;
 }
 
-/**********************************************/
-/************ article 1 animations ************/
-/**********************************************/
-@keyframes coco-start-animation {
-  0% {
-    transform:scale(0);
-  }
-  100% {
-    transform:scale(1);
-  }
-}
 
-.productpagina article:first-of-type img:first-of-type {
-  animation-name: coco-start-animation;
-  animation-duration: 3s;
-}
+
 
 
 
@@ -773,6 +837,10 @@ article:nth-of-type(4) section:first-of-type img {
   z-index: 1;
 }
 
+.productpagina article:nth-of-type(2) h3 {
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
+}
+
 .productpagina article:nth-of-type(2) section h3, article:nth-of-type(2) section a, article:nth-of-type(2) section p{
   color: var(--black);
 }
@@ -797,9 +865,13 @@ article:nth-of-type(4) section:first-of-type img {
 
   z-index: 0;
 
+  color: #000000; /*kleur blijf altijd hetzelfde*/
   background-color: var(--background-geel);
   padding: 0.7em;
 }
+
+
+
 
 
 
@@ -848,11 +920,7 @@ article:nth-of-type(4) section:first-of-type img {
   width: 25%;
   margin-left: auto;
   margin-right: auto;
-
-  /* width: 85%;
-  top: -2em; */
 } 
-
 
 
 
@@ -863,7 +931,7 @@ article:nth-of-type(4) section:first-of-type img {
 /*********************************************************************/
 /*********************************************************************/
 .productpagina article:nth-of-type(4) section{
-  background-color: var(--helder-blue);
+  background-color: var(--accent);
 
   position: relative;
   left: 0;
@@ -890,8 +958,8 @@ article:nth-of-type(4) section:first-of-type img {
 }
 
 .productpagina article:nth-of-type(4) section a {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #000000; /*kleur blijf altijd hetzelfde*/
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
   padding: 1em;
 
   position: absolute;
@@ -904,6 +972,9 @@ article:nth-of-type(4) section:first-of-type img {
   margin: 0;
   padding-bottom: 3em;
 }
+
+
+
 
 
 
@@ -934,16 +1005,12 @@ footer ul li {
 }
 
 footer ul li a {
-  color: var(--white);
+  color: #ffffff; /*kleur blijf altijd hetzelfde*/
 }
 
 footer ul:nth-of-type(2) li a {
   margin-left: 2em;
-  /* text-align: left; */
 }
-
-/* footer ul:nth-of-type(2) li img {
-} */
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
