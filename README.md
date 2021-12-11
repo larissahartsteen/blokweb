@@ -60,11 +60,8 @@ Product pagina
 <img src="images/screenshot_homepagina_verdeeld.png" width="375px" alt="breakdown van de hele home pagina">
 <img src="images/screenshot_productpagina_verdeeld.png" width="375px" alt="breakdown van een product pagina">
 
-### dynamisch deel (bijv menu): 
+### dynamisch deel: 
 <img src="images/screenshot_menu.png" width="375px" alt="screenshot van menu">
-
-<!-- ### wellicht nog een dynamisch deel (bijv filter):  -->
-<!-- <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
 
@@ -155,36 +152,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 Lijst met je bevindingen die in de test naar voren kwamen:
 - Kleine knopjes zijn niet toegankelijk
 - Hoge contrasten zijn nodig voor mensen met kleurenblindheid
-<!-- - Als iets met een touchpad werkt hoeft het niet te betekenen dat het ook met een muis werkt -->
-<!-- - De icoontjes onder aan de ingrediënten lijst zijn moeilijk te zien in light-mode vanwege het contrast -->
 - Een kleine font-size is niet toegankelijk genoeg
 
-
-
-- spasme/parkinson
-    moelijk touchpad nog moeilijker met muis
-    eerste stand prima te doen
-    hoogste stand niet te doen
-    <!-- de linkjes misschien iets te klein maar was nog makkelijk klikbaar in eerste stand -->
-
-- color #0779P (geel)
-    <!-- alles goed te zien, kleuren contast prima  -->
-
-- peripheral field loss #0775p stipje doorheenkijken
-    <!-- zelf met en zonder bril niets goed te zien -->
-    <!-- testpersonen konden het prima zien, niets te klagen -->
-
-- central field loss AMD #200774 stipje in het midden
-    <!-- wat moeilijker kan er nu natuurlijk doorheen kijken -->
-
-- combined loss diabetic eye disease #200773 vlekjes
-    <!-- lastig maar goed te zien -->
-
-- low contrast 
-    <!-- icoontjes moeilijk te zien -->
-    <!-- zwart op geel wat lastig -->
-
-- voice over???
 
 #### Kleine knopjes zijn niet toegankelijk
 Met het spasme/parkinson apparaat was het op de eerste stand goed te doen om op de knoppen te klikken, op de linkjes in de tekst ging dit lastiger. Op de hogere standen was het lastig om op deze te klikken. 
@@ -193,7 +162,7 @@ Dit kan opgelost worden door de knoppen en linkjes wat groter te maken. Door pad
 
 
 #### Hoge contrasten zijn nodig voor mensen met kleurenblindheid 
-Met de 'color #0779P' bril was alles goed te zien en het contrast tussen de kleuren was prima. Met de 'low contrast' bril was het lastig om het zwart op een gele achtergrond te zien, dit was vooral bij de icoontjes onder de ingrediënten lijst.
+Met de 'color #0779P' bril was alles goed te zien en het contrast tussen de kleuren was prima. Met de 'low contrast' bril was het lastig om het zwart op een gele achtergrond te zien, dit was vooral bij de icoontjes onder de ingrediënten lijst (in dark-mode).
 
 Dit kan opgelost worden door de website door een contrast checker te halen en de moeilijk zichtbare onderdelen van kleur te veranderen.
 
