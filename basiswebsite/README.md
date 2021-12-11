@@ -61,9 +61,9 @@ Product pagina
 <img src="images/screenshot_productpagina_verdeeld.png" width="375px" alt="breakdown van een product pagina">
 
 ### dynamisch deel (bijv menu): 
-<!-- <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel"> -->
+<img src="images/screenshot_menu.png" width="375px" alt="screenshot van menu">
 
-### wellicht nog een dynamisch deel (bijv filter): 
+<!-- ### wellicht nog een dynamisch deel (bijv filter):  -->
 <!-- <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
@@ -152,16 +152,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-<!-- Lijst met je bevindingen die in de test naar voren kwamen:
+Lijst met je bevindingen die in de test naar voren kwamen:
 - Kleine knopjes zijn niet toegankelijk
 - Hoge contrasten zijn nodig voor mensen met kleurenblindheid
-- Als iets met een touchpad werkt hoeft het niet te betekenen dat het ook met een muis werkt
-- De icoontjes onder aan de ingrediënten lijst zijn moeilijk te zien in light-mode vanwege het contrast
+- Een kleine font-size is niet toegankelijk genoeg
+<!-- - Als iets met een touchpad werkt hoeft het niet te betekenen dat het ook met een muis werkt -->
+<!-- - De icoontjes onder aan de ingrediënten lijst zijn moeilijk te zien in light-mode vanwege het contrast -->
 
 
-
-
-- spasme/parkinson
+<!-- - spasme/parkinson
     moelijk touchpad nog moeilijker met muis
     eerste stand prima te doen
     hoogste stand niet te doen
@@ -186,27 +185,25 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - voice over??? -->
 
-
-
 #### Kleine knopjes zijn niet toegankelijk
-Hier korte omschrijving (met indien nodig een afbeelding)
+Met het spasme/parkinson apparaat was het op de eerste stand goed te doen om op de knoppen te klikken, op de linkjes in de tekst ging dit lastiger. Op de hogere standen was het lastig om op deze te klikken. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit kan opgelost worden door de knoppen en linkjes wat groter te maken. Door padding toe te voegen wordt de ruimte om te klikken groter. 
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Hoge contrasten zijn nodig voor mensen met kleurenblindheid 
+Met de 'color #0779P' bril was alles goed te zien en het contrast tussen de kleuren was prima. Met de 'low contrast' bril was het lastig om het zwart op een gele achtergrond te zien, dit was vooral bij de icoontjes onder de ingrediënten lijst (in dark-mode).
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit kan opgelost worden door de website door een contrast checker te halen en de moeilijk zichtbare onderdelen van kleur te veranderen.
 
 
-#### Titel nog een bevinding. 
+#### Een kleine font-size is niet toegankelijk genoeg
+Ik heb met de 'peripheral field loss #0775p' bril getest. De testperoon kon de tekst met deze bril duidelijk lezen. Ook heb ik ook met de 'central field loss AMD #200774' bril getest. Hiermee was het moeilijker om de tekst te lezen, dit was lastig om te testen, omdat je er nu zelf omheen kan kijken. Verder heb ik de 'combined loss diabetic eye disease #200773' bril gebruikt. Hiermee kon de testpersoon de tekst goed lezen en was hier niets op aan te merken.
+
+Dit kan opgelost worden door een functie aan de webite toe te voegen waarmee de gebruiker de grootte van de tekst kan wijzigen.
+
+
+#### 
 Hier korte omschrijving (met indien nodig een afbeelding)
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
@@ -246,10 +243,8 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Het probleem van mijn footer die versprongen was is opgelost
+- Wij hebben een aantal tips gekregen over hoe wij onze css netter kunnen maken 
 
 </details>
 
@@ -280,10 +275,20 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
+### Code bronnen
+1. https://codepen.io/shooft/pen/zYzEPgv -menu
+2. https://codepen.io/shooft/pen/GREjemg -section 8-
+3. https://www.w3schools.com/html/html5_video.asp -video-
 
-1. bron 1
-2. bron 2
-3. ...
+
+### Images & video bronnen
+1. https://www.facebook.com/abbotkinneys/videos/oh-oh-deze-ijsjes-zijn-zo-lekker-wij-kunnen-echt-niet-kiezen-welke-smaak-eet-jij/1452197294859217/
+2. https://abbotkinneys.com
+3. https://abbotkinneys.com/guide/homemade-vegan-banana-granola
+4. https://abbotkinneys.com/guide/pumpkin-kale-salad-with-mustard-yog-dressing
+5. https://abbotkinneys.com/guide/indian-spiced-pumpkin-curry-with-coconut-dip
+6. https://abbotkinneys.com/vegan-yog/coco-start-natural
+7. https://abbotkinneys.com/guide/acaï-bowl-with-coconut-yog
+8. https://abbotkinneys.com/guide/mango-sticky-coconut-rice
 
 </details>

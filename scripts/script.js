@@ -1,7 +1,6 @@
 var deButton = document.querySelector("nav button:last-of-type");
 var bekijkMeerButton = document.querySelector("article:nth-of-type(3) button");
 
-
 function toggleMenu(event) {
   deNav = event.target.parentNode;
   deNav.classList.toggle("toonMenu");
