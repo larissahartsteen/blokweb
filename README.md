@@ -225,8 +225,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 Het lastigste onderdeel om te maken voor mij was het wegschuiven van de sections, vooral het JavaScript gedeelte, dit was een beetje weggezakt.
-<img src="images/screenshot_ingeklapt" width="375px" alt="Screenshot ingeklapte sections">
-<img src="images/screenshot_uitgeschoven" width="375px" alt="Screenshot uitgeschoven sections">
+<img src="images/screenshot_ingeklapt.png" width="375px" alt="Screenshot ingeklapte sections">
+<img src="images/screenshot_uitgeschoven.png" width="375px" alt="Screenshot uitgeschoven sections">
 
 Verder had ik af en toe een klein detail over het hoofd gezien waardoor het niet deed wat ik wilde.
 
