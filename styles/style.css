@@ -421,9 +421,7 @@ nav button {
   padding: 0.5em;
   z-index: 4;
 
-  /* appearance: none; */
   border: none;
-
   background-color: transparent;
   color: var(--grey);
   font-family: var(--main-font);
@@ -478,8 +476,6 @@ article:first-of-type h2 {
 }
 
 article:first-of-type ul {
-  /* display: flex; */
-  /* flex-grow: 1; */
   position: relative;
   margin-top: 2em;
 }
@@ -541,10 +537,6 @@ article:nth-of-type(2) a {
   background-color: #000000;
   color: #ffffff;
   padding: 1em;
-
-  /* position: absolute;
-  bottom: 2em;
-  left: 2em; */
 }
 
 

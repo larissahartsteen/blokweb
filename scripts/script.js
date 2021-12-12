@@ -2,8 +2,8 @@ var deButton = document.querySelector("nav button:last-of-type"); //zoekt de but
 var bekijkMeerButton = document.querySelector("article:nth-of-type(3) button");
 
 function toggleMenu(event){ //deze function zorgt ervoor dat als je op de menu knop klikt je het menu krijgt te zien
-  deNav = event.target.parentNode; //???????????????????????????????
-  deNav.classList.toggle("toonMenu"); //???????????????????????????????
+  deNav = event.target.parentNode; 
+  deNav.classList.toggle("toonMenu"); 
 }
 deButton.addEventListener("click", toggleMenu); //zegt dat de button de functie toggleMenu moet uitvoeren wanneer er op geklikt wordt
 
