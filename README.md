@@ -86,11 +86,10 @@ Product pagina
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Anneke            |Yeliz               | Larissa           | Linsey            |
+| ---               | ---                | ---               | ---               |
+| -                 | -                  | -                 | -                 |
+
 
 
 ### Verslag van meeting
@@ -155,10 +154,12 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 - Een kleine font-size is niet toegankelijk genoeg
 
 
+
 #### Kleine knopjes zijn niet toegankelijk
 Met het spasme/parkinson apparaat was het op de eerste stand goed te doen om op de knoppen te klikken, op de linkjes in de tekst ging dit lastiger. Op de hogere standen was het lastig om op deze te klikken. 
 
 Dit kan opgelost worden door de knoppen en linkjes wat groter te maken. Door padding toe te voegen wordt de ruimte om te klikken groter. 
+
 
 
 #### Hoge contrasten zijn nodig voor mensen met kleurenblindheid 
@@ -167,16 +168,11 @@ Met de 'color #0779P' bril was alles goed te zien en het contrast tussen de kleu
 Dit kan opgelost worden door de website door een contrast checker te halen en de moeilijk zichtbare onderdelen van kleur te veranderen.
 
 
+
 #### Een kleine font-size is niet toegankelijk genoeg
 Ik heb met de 'peripheral field loss #0775p' bril getest. De testperoon kon de tekst met deze bril duidelijk lezen. Ook heb ik ook met de 'central field loss AMD #200774' bril getest. Hiermee was het moeilijker om de tekst te lezen, dit was lastig om te testen, omdat je er nu zelf omheen kan kijken. Verder heb ik de 'combined loss diabetic eye disease #200773' bril gebruikt. Hiermee kon de testpersoon de tekst goed lezen en was hier niets op aan te merken.
 
 Dit kan opgelost worden door een functie aan de webite toe te voegen waarmee de gebruiker de grootte van de tekst kan wijzigen.
-
-
-#### 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 </details>
 
@@ -228,11 +224,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het lastigste onderdeel om te maken voor mij was het wegschuiven van de sections, vooral het JavaScript gedeelte, dit was een beetje weggezakt.
+<img src="images/screenshot_ingeklapt" width="375px" alt="Screenshot ingeklapte sections">
+<img src="images/screenshot_uitgeschoven" width="375px" alt="Screenshot uitgeschoven sections">
+
+Verder had ik af en toe een klein detail over het hoofd gezien waardoor het niet deed wat ik wilde.
+
+Ik heb elke week de oefeningen gemaakt en toegepast aan mijn website, omdat het toen nog vers in mijn hoofd zat. Hier kwam ik meestal uiteindelijk wel uit, dus dit heeft mij erg geholpen.
+
 
 ### Screenshot(s)
+<img src="images/screenshot_homepage.png" width="375px" alt="Screenshot volledige homepagina">
+<img src="images/screenshot_homepage_darkmode.png" width="375px" alt="Screenshot volledige homepagina in dark mode">
+<img src="images/screenshot_productpage.png" width="375px" alt="Screenshot volledige productpagina">
+<img src="images/screenshot_productepage_darkmode.png" width="375px" alt="Screenshot volledige productpagina in dark mode">
 
-hier screenshot(s) van je eindresultaat
 
 </details>
 
@@ -249,6 +255,8 @@ hier screenshot(s) van je eindresultaat
 1. https://codepen.io/shooft/pen/zYzEPgv -menu
 2. https://codepen.io/shooft/pen/GREjemg -section 8-
 3. https://www.w3schools.com/html/html5_video.asp -video-
+4. https://www.w3schools.com/css/css_important.asp -!important-
+5. https://css-tricks.com/almanac/selectors/g/general-sibling/ -~-
 
 
 ### Images & video bronnen
